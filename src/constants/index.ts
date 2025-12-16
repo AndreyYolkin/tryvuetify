@@ -24,9 +24,9 @@ export const managers = [
 ] as const
 
 export const commands = {
-  pnpm: 'pnpm create vuetify',
-  yarn: 'yarn create vuetify',
-  npm: 'npm create vuetify',
-  bun: 'bun create vuetify',
-  deno: 'deno init --npm vuetify',
+  pnpm: 'pnpm add @vuetify/v0',
+  yarn: 'yarn add @vuetify/v0',
+  npm: 'npm install @vuetify/v0',
+  bun: 'bun add @vuetify/v0',
+  deno: 'deno add npm:@vuetify/v0',
 }
