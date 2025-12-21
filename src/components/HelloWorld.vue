@@ -92,12 +92,7 @@
         <v-img class="lg-md-auto" max-height="300" position="right" :src="logo" />
       </v-col>
     </v-row>
-
-    <div class="v-bg position-absolute top-0 right-0 left-0 bottom-0">
-      <div aria-hidden="true" class="overflow-hidden opacity-20 w-100 h-100" />
-    </div>
   </v-container>
-  <Footer />
   <v-snackbar-queue v-model="messages" rounded="lg" variant="tonal" />
 </template>
 
@@ -106,7 +101,6 @@
   import { computed, shallowRef } from 'vue'
   import { VIconBtn } from 'vuetify/labs/components'
   import logo from '../assets/logo.svg'
-  import Footer from './Footer.vue'
 
   const selectedManger = shallowRef<Manager>('npm')
 

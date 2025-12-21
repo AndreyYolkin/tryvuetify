@@ -22,8 +22,7 @@ const iconify = <IconSet>{
       h(Icon, {
         key: stringIcon,
         inline: true,
-        // @ts-expect-error todo fix types later
-        icon: aliases[icon as string] ?? icon,
+        icon: (typeof stringIcon === 'string' ? (aliases[stringIcon] ?? stringIcon) : stringIcon) as any,
       }),
     ])
   },

@@ -9,7 +9,7 @@
     "lint:fix": "eslint --fix",
     "build": "run-p type-check \"build-only {@}\" --",
     "serve": "vite preview",
-    "build-only": "vite build",
+    "build-only": "vite-ssg build",
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.15.18",
+    "@unhead/vue": "^2.0.19",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.27.0",
@@ -31,7 +32,10 @@
     "unplugin-fonts": "^1.3.1",
     "unplugin-vue-components": "^28.5.0",
     "vite": "^6.3.5",
+    "vite-plugin-vue-layouts-next": "^1.3.0",
     "vite-plugin-vuetify": "^2.1.1",
+    "vite-ssg": "^28.2.2",
+    "vue-router": "^4.6.4",
     "vue-tsc": "^2.2.10"
   },
   "pnpm": {

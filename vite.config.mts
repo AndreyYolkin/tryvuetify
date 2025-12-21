@@ -2,11 +2,13 @@ import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import Fonts from 'unplugin-fonts/vite'
 import { defineConfig } from 'vite'
+import Layouts from 'vite-plugin-vue-layouts-next'
 import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    Layouts(),
     vue(),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
     vuetify({
@@ -60,5 +62,8 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+  },
+  ssr: {
+    noExternal: ['vuetify'],
   },
 })
