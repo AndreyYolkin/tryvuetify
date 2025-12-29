@@ -112,11 +112,11 @@ export function useScaffold () {
       parts.push(`--name ${projectName.value}`)
     }
 
-    if (selections.type?.value) {
+    if (selections.type?.value && selections.type.value !== 'vuetify') {
       parts.push(`--type ${selections.type.value}`)
     }
 
-    if (selections.template?.value) {
+    if (selections.template?.value && selections.template.value !== 'vue') {
       parts.push(`--platform ${selections.template.value}`)
     }
 
