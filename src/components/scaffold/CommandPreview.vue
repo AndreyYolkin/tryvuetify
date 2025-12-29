@@ -38,7 +38,7 @@
             </div>
           </v-card-text>
         </v-card>
-        <div class="text-center text-caption mb-8 text-disabled">
+        <div class="text-center text-caption mb-8 text-disabled" @click="copyCommand">
           click to copy
         </div>
 
