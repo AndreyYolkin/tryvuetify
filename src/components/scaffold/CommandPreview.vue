@@ -19,12 +19,12 @@
         <div class="text-center mb-6">
           <h1 class="text-h4 font-weight-bold mb-4">You're almost there!</h1>
           <p class="text-body-1 text-medium-emphasis font-weight-regular">
-            Run this command to scaffold your Vuetify project click to copy
+            Run this command to scaffold your Vuetify project
           </p>
         </div>
 
         <v-card
-          class="mb-8 mx-4"
+          class="mx-4 mb-1"
           color="#1E1E1E"
           elevation="0"
           rounded="lg"
@@ -38,6 +38,9 @@
             </div>
           </v-card-text>
         </v-card>
+        <div class="text-center text-caption mb-8 text-disabled">
+          click to copy
+        </div>
 
         <div class="d-flex justify-center flex-wrap gap-4">
           <v-chip
