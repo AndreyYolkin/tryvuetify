@@ -2,6 +2,7 @@
   <v-footer
     app
     height="40"
+    order="1"
   >
     <a
       v-for="item in items"
